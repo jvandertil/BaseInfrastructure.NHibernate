@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.Core", "BaseInfrastructure.NHibernate.Core\BaseInfrastructure.NHibernate.Core.csproj", "{6F047512-ABBE-45AD-8F2B-B234BE8299DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.TestCore", "BaseInfrastructure.NHibernate.TestCore\BaseInfrastructure.NHibernate.TestCore.csproj", "{4233138C-0BE7-452D-B6DE-45CD8DA0D64C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.Mvc", "BaseInfrastructure.NHibernate.Mvc\BaseInfrastructure.NHibernate.Mvc.csproj", "{3C14AD75-7F2C-4DCA-9289-097E3F588E87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.Mvc.TestCore", "BaseInfrastructure.NHibernate.Mvc.TestCore\BaseInfrastructure.NHibernate.Mvc.TestCore.csproj", "{F9B7508B-CE28-43CC-B64A-DB819B6565A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.Entities", "BaseInfrastructure.NHibernate.Entities\BaseInfrastructure.NHibernate.Entities.csproj", "{A45858F7-FD0B-4536-9089-A2B1D45986DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.Entities.FNH", "BaseInfrastructure.NHibernate.Entities.FNH\BaseInfrastructure.NHibernate.Entities.FNH.csproj", "{FB26662D-60B3-4CA1-B4B8-5A608E0A71CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F047512-ABBE-45AD-8F2B-B234BE8299DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F047512-ABBE-45AD-8F2B-B234BE8299DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F047512-ABBE-45AD-8F2B-B234BE8299DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F047512-ABBE-45AD-8F2B-B234BE8299DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4233138C-0BE7-452D-B6DE-45CD8DA0D64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4233138C-0BE7-452D-B6DE-45CD8DA0D64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4233138C-0BE7-452D-B6DE-45CD8DA0D64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4233138C-0BE7-452D-B6DE-45CD8DA0D64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C14AD75-7F2C-4DCA-9289-097E3F588E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C14AD75-7F2C-4DCA-9289-097E3F588E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C14AD75-7F2C-4DCA-9289-097E3F588E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C14AD75-7F2C-4DCA-9289-097E3F588E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B7508B-CE28-43CC-B64A-DB819B6565A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B7508B-CE28-43CC-B64A-DB819B6565A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B7508B-CE28-43CC-B64A-DB819B6565A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B7508B-CE28-43CC-B64A-DB819B6565A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A45858F7-FD0B-4536-9089-A2B1D45986DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45858F7-FD0B-4536-9089-A2B1D45986DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45858F7-FD0B-4536-9089-A2B1D45986DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45858F7-FD0B-4536-9089-A2B1D45986DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB26662D-60B3-4CA1-B4B8-5A608E0A71CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB26662D-60B3-4CA1-B4B8-5A608E0A71CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB26662D-60B3-4CA1-B4B8-5A608E0A71CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB26662D-60B3-4CA1-B4B8-5A608E0A71CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
