@@ -53,6 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Build\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="Command.cs" />
     <Compile Include="Events\EntityEvent.cs" />
     <Compile Include="Events\EventDispatcher.cs" />

@@ -43,6 +43,9 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Build\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="AbstractController.cs" />
     <Compile Include="ExampleNHibernateActionFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
