@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.Core", "BaseInfrastructure.NHibernate.Core\BaseInfrastructure.NHibernate.Core.csproj", "{6F047512-ABBE-45AD-8F2B-B234BE8299DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.TestCore", "BaseInfrastructure.NHibernate.TestCore\BaseInfrastructure.NHibernate.TestCore.csproj", "{4233138C-0BE7-452D-B6DE-45CD8DA0D64C}"
@@ -12,6 +12,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.Entities", "BaseInfrastructure.NHibernate.Entities\BaseInfrastructure.NHibernate.Entities.csproj", "{A45858F7-FD0B-4536-9089-A2B1D45986DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInfrastructure.NHibernate.Entities.FNH", "BaseInfrastructure.NHibernate.Entities.FNH\BaseInfrastructure.NHibernate.Entities.FNH.csproj", "{FB26662D-60B3-4CA1-B4B8-5A608E0A71CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{223EA463-BBBC-416F-95DD-81F15A350FEC}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
