@@ -18,8 +18,6 @@ namespace BaseInfrastructure.NHibernate.Mvc
         /// The current NHibernate Unit of Work
         /// </summary>
         public new Lazy<ISession> Session { get; set; }
-
-        public HttpSessionStateBase BaseSession {get { return base.Session; }}
         
         #region Unit Testing functions
         /// <summary>
