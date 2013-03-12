@@ -68,7 +68,7 @@ namespace BaseInfrastructure.NHibernate.Mvc.TestCore
         {
             var controller = (TController)Activator.CreateInstance(typeof(TController));
 
-            controller.Session = new Lazy<ISession>(() => SessionMock.Object);
+            controller.LazySession = new Lazy<ISession>(() => SessionMock.Object);
             controller.AlternativeExecuteCommand = CaptureCommand;
             controller.AlternativeExecuteCommandWithResult = CaptureCommandWithResult;
             controller.AlternativeQueryFunction = CaptureQuery;

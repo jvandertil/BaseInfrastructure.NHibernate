@@ -17,8 +17,11 @@ namespace BaseInfrastructure.NHibernate.Mvc
         /// <summary>
         /// The current NHibernate Unit of Work
         /// </summary>
-        public new Lazy<ISession> Session { get; set; }
-        
+        public Lazy<ISession> LazySession { get; set; }
+
+        public new ISession Session { get { return LazySession.Value; } }
+
+
         #region Unit Testing functions
         /// <summary>
         /// A function to assist in unit testing. 
@@ -72,7 +75,7 @@ namespace BaseInfrastructure.NHibernate.Mvc
             if (AlternativeRaiseEvent != null)
                 AlternativeRaiseEvent(@event);
             else
-                EventDispatcher.DispatchEvent(@event, Session.Value);
+                EventDispatcher.DispatchEvent(@event, LazySession.Value);
         }
 
         /// <summary>
@@ -107,14 +110,14 @@ namespace BaseInfrastructure.NHibernate.Mvc
         #region Default query and command functions
         private TResult DefaultQuery<TResult>(Query<TResult> query)
         {
-            query.Session = Session.Value;
+            query.Session = LazySession.Value;
 
             return query.Execute();
         }
 
         private void DefaultExecuteCommand(Command cmd)
         {
-            cmd.Session = Session.Value;
+            cmd.Session = LazySession.Value;
             cmd.Execute();
         }
 

@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 
 [assembly: ComVisible(false)]
 
-[assembly: AssemblyVersion("1.0.0.1")] //Will be replaced
-[assembly: AssemblyFileVersion("1.0.0.1")]
+[assembly: AssemblyVersion("1.0.0")] //Will be replaced
+[assembly: AssemblyFileVersion("1.0.0")]
 
 [assembly: NeutralResourcesLanguage("en-US")]

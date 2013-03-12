@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.Mvc;
+using BaseInfrastructure.NHibernate.Core;
 using NHibernate;
 using NHibernate.Cfg;
 
@@ -7,7 +8,7 @@ namespace BaseInfrastructure.NHibernate.Mvc
 {
     internal class ExampleNHibernateActionFilter : ActionFilterAttribute
     {
-        private static readonly Lazy<ISessionFactory> SessionFactory = new Lazy<ISessionFactory>(BuildSessionFactory, true);
+        private static readonly System.Lazy<ISessionFactory> SessionFactory = new System.Lazy<ISessionFactory>(BuildSessionFactory, true);
 
         protected static ISessionFactory BuildSessionFactory()
         {
@@ -23,9 +24,12 @@ namespace BaseInfrastructure.NHibernate.Mvc
             if (sessionController == null)
                 return;
 
-            sessionController.Session = new Lazy<ISession>(() => { var session = SessionFactory.Value.OpenSession();
-                                                                       session.BeginTransaction();
-                                                                       return session;}, false);
+            sessionController.LazySession = new Lazy<ISession>(() =>
+            {
+                var session = SessionFactory.Value.OpenSession();
+                session.BeginTransaction();
+                return session;
+            }, false);
         }
 
         public override void OnActionExecuted(ActionExecutedContext filterContext)
@@ -36,10 +40,10 @@ namespace BaseInfrastructure.NHibernate.Mvc
                 return;
 
             // Database session was not used.
-            if (!sessionController.Session.IsValueCreated)
+            if (!sessionController.LazySession.IsValueCreated)
                 return;
 
-            using (var session = sessionController.Session.Value)
+            using (var session = sessionController.LazySession.Value)
             {
                 if (session == null)
                     return;
